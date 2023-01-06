@@ -155,7 +155,6 @@ const Converter = () => {
       case "EUR":
         lengthRestriction = 7;
         if (inputValue.length > lengthRestriction) {
-          console.log("restriction applied");
           return inputValue.split("").splice(0, lengthRestriction).join("");
         } else return input;
       default:
